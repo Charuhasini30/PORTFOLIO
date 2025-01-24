@@ -1,0 +1,19 @@
+/* /src/components/Contact.css */
+.contact-form input,
+.contact-form textarea {
+  width: 100%;
+  padding: 12px;
+  margin: 10px 0;
+  border-radius: 5px;
+  border: 1px solid #ddd;
+}
+
+.contact-form input[type="submit"] {
+  background-color: #28a745;
+  color: white;
+  cursor: pointer;
+}
+
+.contact-form input[type="submit"]:hover {
+  background-color: #218838;
+}

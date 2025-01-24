@@ -1,0 +1,61 @@
+/* /src/components/Projects.css */
+.projects {
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    padding: 50px;
+    background-color: #f4f4f9;
+}
+  
+.project-card {
+    background-color: #000 !important; /* Use !important to enforce color */
+    color: #fff !important; /* Ensure text remains white */
+    border-radius: 10px;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+    width: 280px;
+    margin: 20px;
+    padding: 25px;
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    font-family: 'Roboto', sans-serif;
+}
+
+.project-card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.2);
+}
+
+.project-card h3 {
+    font-size: 1.7rem;
+    margin-bottom: 15px;
+    font-weight: bold;
+    color: #02875f; /* Title color */
+}
+
+.project-card p {
+    font-size: 1.1rem;
+    line-height: 1.5;
+    color: #ddd;
+}
+
+.project-link {
+    background-color: #02875f;
+    border: none;
+    color: black;
+    padding: 12px 25px;
+    font-size: 1.1rem;
+    text-decoration: none;
+    border-radius: 30px;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    display: inline-block;
+    margin-top: 15px;
+}
+
+.project-link:hover {
+    background-color: #e14c3d;
+    transform: translateY(-2px);
+}
+
+.project-link:active {
+    transform: translateY(1px);
+}
