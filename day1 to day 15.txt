@@ -1,0 +1,881 @@
+DAY - 1:
+
+
+const myMessage = 'Hello world'
+console.log(myMessage)
+=============================
+
+
+ const myMessage = 'Hello world'
+console.log("my data is: ",myMessage)
+
+================================
+ const myName = 'sai'
+ const myRoll=12
+console.log("my name is: ",myName,"my roll is: ",myRoll)
+console.log(my name is: ${myName} and my roll is ${myRoll})
+// my data is: sai my roll is: 12 
+=================================
+ const myName = 'sai'
+ myName='ram'
+console.log(`my name is: ${myName} `)
+
+
+======================================
+ var myName = 'sai'
+ myName='ram'
+  
+console.log(`my name is: ${myName} `)
+// my data is: sai my roll is: 12 
+=============================================
+ let myName = 'sai'
+ myName='ram'
+  
+console.log(`my name is: ${myName} `)
+// my data is: sai my roll is: 12 
+====================================
+var myName = 'sai'
+function disp(){
+  myName = 'ram'
+  console.log('im inside the fun: ',myName)
+if(true){
+     myName = 'nandhini'
+console.log('im inside the block: ',myName)
+}
+}
+disp()
+console.log('im inside the fun: ',myName)
+============================
+const myName='outside'
+function disp(){
+  const myName = 'inside func'
+  console.log('im inside the fun: ',myName)
+if(true){
+     const myName = 'inside the block'
+console.log('im inside the block: ',myName)
+}
+}
+disp()
+console.log('im outside the function: ',myName)
+
+======================================
+var myName='1'
+function disp(){
+
+if(false){
+     var myName = '2'
+}
+console.log('im inside the block: ',myName)
+}
+disp()
+console.log('im outside the function: ',myName)
+
+=========================
+let myName='1'
+function disp(){
+if(true){
+     let myName = '2'
+}
+console.log('im inside the block: ',myName)
+}
+disp()
+console.log('im outside the function: ',myName)
+
+==============================
+ //var b=10
+function disp() {
+  //let a=10
+    b=10
+  }
+disp()
+//console.log(a);
+ console.log(b);
+
+ 
+============================
+  const person={
+    roll:23,
+    stuName:"sai"
+  }
+  person.stuName="ram"
+  console.log(person.stuName);
+const per=[12,'nan',90,89]
+  const a=[23,1,4,6]
+  /*
+ {
+  0:23
+  1:1
+  2:4
+  3:6
+  }
+  */
+  a[0]=45
+ console.log(a);
+
+  ==========================   
+   a='sai'
+   b="ram"
+  c=`hai erwer
+  weerewrewrewrw werwerwerwe werwerewrewr `
+ console.log(a);
+ console.log(b);
+ console.log(c);
+
+  
+ 
+===============================
+console.log("Hello, World!");a = 12;
+b = 32432423442343242342342222222222n;
+c = Infinity;
+ d = 10 / 0;
+ e = 5 < Infinity;
+ d = 'hai' * 3;
+f=NaN
+console.log(a);
+console.log(b);
+console.log(c);
+console.log(d);
+console.log(e);
+ console.log(d);
+  console.log(f);
+=========================================
+let a= false
+let b= true
+console.log(a)
+console.log(b)
+console.log (typeof (a))
+let a= false
+let b= true
+console.log(a)
+console.log(b)
+console.log (typeof (a))
+===========================
+let a= null
+console.log(a)
+console.log (typeof (a))
+=======================================
+let a
+console.log(a,typeof(a))
+var a= 1
+var b= '1'
+console.log(a!==b)
+========================
+var a= 1
+var b= '1'
+console.log(a===b)
+===========================
+var a= 2
+var b= 4
+console.log(a**b)
+===========================
+ let a=[12,4,"sai",23.4]
+let datas=[100,200,300]
+let person={name:'reena', roll:5}
+console.log(a)
+a.push(datas,800,person)
+console.log(a)
+
+console.log(a[4])
+a[4].push(400)
+console.log(a)
+============================
+let a=[12,4,"sai",23.4]
+let datas=[100,200,300]
+let person={name:'reena', roll:5}
+console.log(a)
+a.unshift(datas,800,person)
+a.unshift(800)
+console.log(a)
+console.log(a[0])
+
+=========================================
+let a=[12,4,"sai",23.4]
+let datas=[100,200,300]
+let person={name:'reena', roll:5}
+a.push(datas,800,person)
+//res=a.pop()
+res=a[4].pop()
+ 
+console.log("result" ,res)
+console.log(a)
+
+===========================================
+let a=[12,4,"sai",23.4]
+ 
+res=a.shift()
+ 
+console.log("result" ,res)
+console.log(a)
+
+===============================
+let a=[12,4,"sai",23.4]
+console.log("b4 del",a.length)
+res=delete a[1]
+console.log(a)
+
+console.log("after del",a.length)
+
+for(let i=0;i<a.length;i++)
+console.log(a[i])
+
+==========================
+let a=[12,4,1]
+var s=0
+ 
+
+for(let i=0;i<a.length;i++)
+s=s+a[i]
+console.log(s)
+let a=[10,20,30,40,50]
+let b=[100,200,300]
+console.log('len: ',a.length)
+ 
+a.splice(1,2,b)//index, how many ele u dnt want
+console.log('len : ',a.length)
+console.log('datas : ',a)
+ let a=[10,20,30,40,50,60,70]
+res = a.slice(1,4)
+console.log(res)
+let person={
+  roll:12,
+  name:"sai"
+}
+console.log(person)
+console.log("dot notation: ",person.name ," ",person.roll)
+console.log("sqr brkt notation: ",person["name"] ," ",person["roll"])
+============================================
+let person={
+  roll:12,
+  name:"sai"
+}
+person.name="ram"
+person['roll']=1
+console.log(person)
+================================
+let person={
+  roll:12,
+  name:"sai"
+}
+person.city="CBE"
+person['state']='TN'
+person.name="ram"
+person['roll']=1
+console.log(person)
+ let person={
+  roll:12,
+  name:"sai"
+}
+person.city="CBE"
+person['state']='TN'
+person.name="ram"
+person['roll']=1
+console.log(person)
+//delete person.roll
+delete person['roll']
+console.log('after del',person)
+let person=[{
+  roll:12,
+  name:"sai"
+},{
+  roll:13,
+  name:"ram"
+}
+
+]
+ 
+console.log(person)
+for(let a of person)
+console.log(a.roll," "+a['name'])
+//console.log(a)
+ let person={
+  roll:12,
+  name:"sai",
+  city:'ceb',
+  state:'tn'
+} 
+ 
+ 
+console.log(person)
+for(let key in person)
+console.log(key ," : ",person[key])
+
+=====================================
+day - 3:
+
+import { useState } from "react"
+ 
+
+export default function Parent1(){
+    const[user,setuser]=useState('sai')
+    const a=()=>{
+        setuser()
+    }
+    return(
+         <>
+         <h1>Parent</h1>
+         <C1 user={user}/>
+         </>
+    )
+
+}
+ function C1(val){
+    const{user}=val
+    
+    return(
+         <>
+         <h1>C1</h1>
+         <C2 user={user}/>
+         </>
+    )
+
+}
+function C2(val){
+    const{user}=val
+    
+    return(
+         <>
+         <h1>C2</h1>
+         <C3 user={user}/>
+         </>
+    )
+
+}
+
+ function C3(val){
+    const{user}=val
+    
+    return(
+         <>
+         <h1>C3</h1>
+         <C4 user={user}/>
+         </>
+    )
+
+}function C4(val){
+    const{user}=val
+    
+    return(
+         <>
+         <h1>C4</h1>
+         <C5 user={user}/>
+         </>
+    )
+
+}
+function C5(val){
+    const{user}=val
+    
+    return(
+         <>
+         <h1>C5 the data is {user}</h1>
+          
+         </>
+    )
+
+}
+===================================
+import { createContext, useContext, useState } from "react"
+
+const userContext=createContext()
+export default function Parent2(){
+      const[user]=useState('sai')
+return(
+    <>
+    <userContext.Provider value={user}>
+    <h1>welcome useContext Hook</h1>
+    <C1/>
+    </userContext.Provider>
+    </>
+)}
+function C1( ){
+     return(
+         <>
+         <h1>C1</h1>
+         <C2  />
+         </>
+    )}
+function C2( ){
+    return(
+         <>
+         <h1>C2</h1>
+         <C3 />
+         </>
+    )
+}
+ function C3( ){
+    return(
+         <>
+         <h1>C3</h1>
+         <C4 />
+         </>
+    )
+
+}function C4( ){
+    return(
+         <>
+         <h1>C4</h1>
+         <C5  />
+         </>
+    )
+
+}
+function C5( ){
+    const user=useContext(userContext)
+    return(
+         <>
+         <h1>C5 the data is {user}</h1>
+          
+         </>
+    )
+
+}
+====================================
+
+
+Day - 7
+
+// it shows the list of databases
+show dbs
+//used to change to stu
+use stu
+
+db.students.insertOne({name:'sai',roll:12})
+ db.students.find()
+ db.students.insertOne({name:'sid',roll:1,age:19,details: {salary:23000,job:'journalist'}})
+ db.students.insertMany([{name:'nanda',roll:12,age:23},{name:'shilpa',roll:23,age:34},{name:'lawan',roll:34,age:54},{name:'yuvan',roll:12,age:45}])
+//find returns cursor object
+db.students.find().toArray()
+db.students.find().forEach((d)=>print('the data',d))
+ db.students.find({'details.job':'journalist'});
+db.students.updateOne({roll:12},{$set:{age:66}})
+ db.students.updateOne({name:'sid'},{$set:{'details.salary':50000}})
+db.students.updateMany({roll:12},{$set:{age:77}})
+ db.students.updateOne({_id: ObjectId('678f686adff09375df0d8196')},{$set:{age:67}})
+db.students.updateOne({name:'nanda',roll:12},{$set:{age:45}})
+db.students.updateOne({name:'nanda',roll:12,details:{$exists:true}},{$set:{age:45}})
+ db.students.updateOne({name:'sid',roll:1,details:{$exists:true}},{$set:{age:25}})
+db.createCollection('stu1',{})
+ db.stu1.insertOne({name:'chiku',roll:3})
+ db.stu1.find()
+db.students.updateOne({ roll: 34 },{$unset: { age: "" },$set: { gender: "Male" }});
+
+
+create a folder
+go to path cmd
+
+code .
+
+npm i --s express express-handlebars body-parser
+npm i -g nodemon 
+
+1.express
+
+Purpose:express is a fast, minimalist web frameworl for node.js. It provides tools to build web applications and APIs
+
+Usage:
+ to handle HTTP requests and responses
+ to create routes for different endpoints(e.g.,GET,POST,PUT,DELETE).
+ to integrate middleware for processing requests.
+
+2.express-handlebars
+
+Purpose: This package is an Express.js template engine for rendering dynamic HTML pages using Handlebars syntax.
+
+Usage:
+  to serve dynamic content by combining HTML templates with javascript data.
+  to create reusable components like headers,footers, etc,., using handlebar partials.
+
+3.body-parser
+ Purpose:
+   body-parser is middleware that parses incoming request bodies in a middleware before your handlers, making the request data accessible in req.body. it is especially useful for handling POST requests.
+
+Usage:
+ to parse JSON data from the request body
+ to parse URL-encoded data from forms
+
+
+app.js
+
+code
+const exhbs = require('express-handlebars');
+const app = express();
+app.engine('hbs',
+    exhbs.engine({
+        layoutsDir:'viewsfold/',
+        defaultLayout:'maincopy',
+        extname:'hbs',
+    })
+);
+
+app.set('views engine','hbs');
+app.set('views','viewsfold');
+
+code app.js
+
+const express=require('express');
+const exhbs=require('express-handlebars')
+const app=express()
+// Config Handlebars
+app.engine('hbs',
+    exhbs.engine({
+        layoutsDir:'viewsfold/',
+        defaultLayout:'maincopy',
+        extname:'hbs'
+    }
+        
+    )
+)
+
+app.set('view engine','hbs')
+app.set('views','viewsfold')
+
+// Routes
+
+app.get('/',(req,res)=>
+{
+    const msg='test';
+    res.render('maincopy',{msg})
+}
+)
+// Start the server
+
+app.listen(8000,()=>
+{
+    console.log('Listening on port 8000.....')
+})
+
+db.js
+
+const mongodb = require('mongodb');
+const mongoClient = mongodb.MongoClient;
+let database;
+function getDatabase(){
+    const client = mongoClient.connect('mongodb://127.0.0.1:27017');
+    database = client.db('t1');
+    if(!database){
+        console.log('Database connected successfully');
+    }
+    else{
+        console.log('Database connection failed');
+    }
+    return database;
+}
+module.exports = { getDatabase };
+
+==================================
+
+DAY-8
+
+app.js
+
+const express=require('express');
+const exhbs=require('express-handlebars')
+const app=express()
+const dbo = require('./db')
+
+
+// Config Handlebars
+app.engine('hbs',
+    exhbs.engine({
+        layoutsDir:'viewsfold/',
+        defaultLayout:'maincopy',
+        extname:'hbs'
+    }
+        
+    )
+);
+
+app.set('view engine','hbs')
+app.set('views','viewsfold')
+
+// Routes
+
+app.get('/', async (req,res)=>
+{
+    let database = await dbo.getDatabase();
+    const collection = database.collection('emp')
+    const cursur = collection.find({})
+    let datas = await cursur.toArray()
+    const msg='';
+    console.log('the data',datas)
+    res.render('maincopy',{msg,datas})
+}
+);
+// Start the server
+
+app.listen(8000,()=>
+{
+    console.log('Listening on port 8000.....')
+})
+
+
+
+to convert node js with mongodb
+
+
+steps
+
+1. npm i mongodb( install mongodb driver)
+
+2.type code
+
+3. npm start
+
+=============================================
+
+Day- 9
+
+App.js
+
+
+const express=require('express');
+const exhbs=require('express-handlebars')
+const app=express()
+const dbo = require('./db')
+
+// Config Handlebars
+app.engine('hbs',
+    exhbs.engine({
+        layoutsDir:'viewsfold/',
+        defaultLayout:'maincopy',
+        extname:'hbs'
+    }
+        
+    )
+);
+
+app.set('view engine','hbs')
+app.set('views','viewsfold')
+
+// Routes
+
+app.get('/', async (req,res)=>
+{
+    let database = await dbo.getDatabase();
+    const collection = database.collection('emp')
+    const cursur = collection.find({})
+    let datas = await cursur.toArray()
+    const msg='';
+    console.log('the data',datas)
+    res.render('maincopy',{msg,datas})
+}
+);
+// Start the server
+
+app.listen(8000,()=>
+{
+    console.log('Listening on port 8000.....')
+})
+
+Db.js
+const mongodb = require('mongodb');
+const mongoClient = mongodb.MongoClient;
+let database;
+async function getDatabase(){
+    const client = await mongoClient.connect('mongodb://127.0.0.1:27017');
+    database = client.db('t1');
+    if(!database){
+        console.log('Database connected successfully');
+    }
+    else{
+        console.log('Database connection failed');
+    }
+    return database;
+}
+module.exports = { getDatabase };
+
+===========================================================
+
+maincopy.hbs
+
+<!DOCTYPE html>
+<html lang = "en">
+    <head>
+        <title>MONGODB CRUD</title>
+    </head>
+    <body>
+        <h1>MONGODB CRUD EXAMPLE</h1>
+        <ul>
+            {{#each datas}}
+            <li>{{this.empid}} {{this.empname}} </li>
+            {{/each}}
+        </ul>
+        <p>{{msg}}</p>
+    </body>
+</html>
+
+========================================================
+Go to command prompt
+
+type mongodb code
+
+and it will be reflected in the localhost 8000
+
+ ===================================================
+
+<!DOCTYPE html>
+<html lang = "en">
+    <head>
+        <title>MONGODB CRUD</title>
+    </head>
+    <body>
+        <h1>MONGODB CRUD EXAMPLE</h1>
+        <h2>Create form</h2>
+        <form action = "/empinfo",method = "POST">
+        <label for="">ID</label>
+        <input type="text" name ="eid">
+        <label for="">NAME</label>
+        <input type="text" name = "ename">
+        </form>
+        <ul>
+            {{#each datas}}
+            <li>{{this.empid}} {{this.empname}} </li>
+            {{/each}}
+        </ul>
+        <p>{{msg}}</p>
+    </body>
+</html>
+
+Form creation only change in maincopy.hbs
+
+
+============================================
+
+ 
+day- 10
+
+ 
+App.js
+const express=require('express');
+const bodyParser = require('body-parser');
+const exhbs=require('express-handlebars')
+const app=express()
+const dbo = require('./db')
+
+
+app.engine('hbs',
+    exhbs.engine({
+        layoutsDir:'viewsfold/',
+        defaultLayout:'maincopy',
+        extname:'hbs'
+    }
+        
+    )
+);
+
+app.set('view engine','hbs');
+app.set('views','viewsfold');
+app.use(bodyParser.urlencoded({extended:true}));
+
+
+app.get('/', async (req,res)=>
+{
+    let database = await dbo.getDatabase();
+    const collection = database.collection('emp')
+    const cursur = collection.find({})
+    let datas = await cursur.toArray()
+ let msg='';
+
+    if(req.query.status==='1')
+       msg="inserted................."
+    console.log('the data',datas)
+    res.render('maincopy',{msg,datas})
+}
+);
+
+app.post('/empinfo',async (req,res) => {
+    const database = await dbo.getDatabase();
+    const collection = database.collection('emp');
+    const employee = { empid: req.body.eid,empname:req.body.ename };
+    await collection.insertOne(employee);
+    res.redirect('/?status=1');
+});
+
+app.listen(8000,()=>
+{
+    console.log('Listening on port 8000.....')
+});
+
+==================================================================
+
+Maincopy.hbs
+
+
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>MONGODB PROJECT</title>
+    </head>
+
+    <body>
+        <h1>Mongodb Project</h1>
+        <h3> Create Form</h3>
+        <form action ="/empinfo"method="post">
+        <label for="">EMP Id</label>
+        <input type="text" name="eid">
+        <label for="">EMP Name</label>
+        <input type="text" name="ename">
+        <input type="submit">
+        </form><br><br>
+        <br><br>
+
+        <ul>
+            {{#each datas}}
+            <li>{{this.empid}} {{this.empname}} </li>
+            {{/each}}
+        </ul>
+
+        <p>{{msg}}</p>
+
+    </body>
+</html>
+
+Output
+
+===================================================
+
+
+Maincopy.hbs
+
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>MONGODB PROJECT EXAMPLE</title>
+    </head>
+    <body>
+        <h1>Mongodb Project</h1>
+        <h3> Create Form</h3>
+        <form action ="/empinfo"method="post">
+        <label for="">Id</label>
+        <input type="text" name="eid">
+        <label for="">Name</label>
+        <input type="text" name="ename">
+        <input type="submit">
+        </form><br><br>
+        <br><br>
+        <ul>
+            {{#each datas}}
+            <li>{{this.empid}} {{this.empname}} <a href ="/?edit_idd ={{this_id}}">Edit</a>
+            </li>
+            {{/each}}
+        </ul>
+        <p>{{msg}}</p>
+    </body>
+</html>
+ ==============================================================
+
+day - 11
+
+
+ db.students.find()
+ db.students.find({},{name:1})
+
+db.students.find({},{'details.job' : 1})
+db.students.find({}).skip(2)
+
+db.students.find({}).limit(2)
+
+
+
+
+
